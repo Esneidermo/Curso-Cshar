@@ -44,5 +44,35 @@ namespace CursoCharp.Listas
                 lstadatos.Items.Add(data);
             }
         }
+
+        private void frmlista1_Load(object sender, EventArgs e)
+        {
+            Dibujarteclado();
         }
+        private void Dibujarteclado()
+        {
+            char[] numeros;//tipo de dato char es que es tipo de carater unico sea una a, una b, un 0 o un 1 etc
+            numeros = "0123456789".ToCharArray(); // como definimos tipo char entonces cada uno sera independiente 
+            fpanel1.Controls.Clear();
+            foreach(char num in numeros)
+            {
+                Button btnnumero = new Button();//creacion del boton 
+                btnnumero.Text =num.ToString();
+                btnnumero.Size = new Size(72,67);
+                btnnumero.FlatStyle = FlatStyle.Flat;
+                btnnumero.ForeColor = Color.FromArgb(192, 192, 255);
+                btnnumero.FlatAppearance.BorderSize = 3;//damos todo el diseño del boton 
+                fpanel1.Controls.Add(btnnumero);//agregar el boton al panel 
+                //los eventos clic se agregan despues de agregarlos al panel
+                btnnumero.Click += Btnnumero_Click;//evento del boton 
+                
+            }
+        }
+
+        private void Btnnumero_Click(object sender, EventArgs e)//boton que creamos por codgio 
+        {//aqui escribimos lo que quieres que haga cada vez que presionas uno de los botones virtuales 
+            string numero = ((Button)sender).Text;//para recocnocer cuando has echo clic en el boton
+            txtpantalla.Text += numero;//ponemos el += para que concatene los numeros que presione con el clic
+        }
+    }
     }

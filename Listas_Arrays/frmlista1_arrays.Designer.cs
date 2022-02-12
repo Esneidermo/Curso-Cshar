@@ -31,10 +31,11 @@
             this.lstadatos = new System.Windows.Forms.ListView();
             this.btnagregar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelnumerico = new System.Windows.Forms.GroupBox();
+            this.txtpantalla = new System.Windows.Forms.TextBox();
+            this.fpanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.panelnumerico.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstadatos
@@ -51,7 +52,7 @@
             this.btnagregar.FlatAppearance.BorderSize = 2;
             this.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagregar.ForeColor = System.Drawing.Color.Coral;
-            this.btnagregar.Location = new System.Drawing.Point(218, 121);
+            this.btnagregar.Location = new System.Drawing.Point(205, 159);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(100, 51);
             this.btnagregar.TabIndex = 2;
@@ -72,23 +73,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "LISTAS-ARRAY";
             // 
-            // groupBox2
+            // panelnumerico
             // 
-            this.groupBox2.Controls.Add(this.flowLayoutPanel1);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(409, 9);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(358, 307);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "teclado numerico";
+            this.panelnumerico.Controls.Add(this.txtpantalla);
+            this.panelnumerico.Controls.Add(this.fpanel1);
+            this.panelnumerico.ForeColor = System.Drawing.Color.White;
+            this.panelnumerico.Location = new System.Drawing.Point(409, 9);
+            this.panelnumerico.Name = "panelnumerico";
+            this.panelnumerico.Size = new System.Drawing.Size(358, 307);
+            this.panelnumerico.TabIndex = 4;
+            this.panelnumerico.TabStop = false;
+            this.panelnumerico.Text = "teclado numerico";
             // 
-            // flowLayoutPanel1
+            // txtpantalla
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(29, 82);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(316, 200);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.txtpantalla.Location = new System.Drawing.Point(41, 20);
+            this.txtpantalla.Name = "txtpantalla";
+            this.txtpantalla.Size = new System.Drawing.Size(192, 20);
+            this.txtpantalla.TabIndex = 1;
+            // 
+            // fpanel1
+            // 
+            this.fpanel1.Location = new System.Drawing.Point(18, 68);
+            this.fpanel1.Name = "fpanel1";
+            this.fpanel1.Size = new System.Drawing.Size(327, 214);
+            this.fpanel1.TabIndex = 0;
             // 
             // frmlista1
             // 
@@ -96,12 +105,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.panelnumerico);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmlista1";
             this.Text = "frmlista1";
+            this.Load += new System.EventHandler(this.frmlista1_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.panelnumerico.ResumeLayout(false);
+            this.panelnumerico.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -110,7 +121,8 @@
         private System.Windows.Forms.ListView lstadatos;
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.GroupBox panelnumerico;
+        private System.Windows.Forms.FlowLayoutPanel fpanel1;
+        private System.Windows.Forms.TextBox txtpantalla;
     }
 }

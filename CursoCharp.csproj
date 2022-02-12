@@ -80,6 +80,12 @@
     <Compile Include="Ejecicios\Ejercicio5.Designer.cs">
       <DependentUpon>Ejercicio5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ejecicios\Ejercicio6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ejecicios\Ejercicio6.Designer.cs">
+      <DependentUpon>Ejercicio6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ejecicios\Menupricipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     <EmbeddedResource Include="Ejecicios\Ejercicio5.resx">
       <DependentUpon>Ejercicio5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ejecicios\Ejercicio6.resx">
+      <DependentUpon>Ejercicio6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejecicios\Menupricipal.resx">
       <DependentUpon>Menupricipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +194,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ejercicio 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644700688566.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644700688685.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644700688618.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644700688643.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644700688665.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1644700688594.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

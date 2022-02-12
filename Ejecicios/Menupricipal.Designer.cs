@@ -33,10 +33,11 @@
             this.btnE1 = new System.Windows.Forms.Button();
             this.btnE2 = new System.Windows.Forms.Button();
             this.btnE3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelVisor = new System.Windows.Forms.Panel();
             this.btnEje4 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelVisor = new System.Windows.Forms.Panel();
+            this.btnE6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(136, 450);
+            this.panel1.Size = new System.Drawing.Size(136, 560);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -58,10 +59,11 @@
             this.flowLayoutPanel1.Controls.Add(this.btnE3);
             this.flowLayoutPanel1.Controls.Add(this.btnEje4);
             this.flowLayoutPanel1.Controls.Add(this.btn5);
+            this.flowLayoutPanel1.Controls.Add(this.btnE6);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 26);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(136, 424);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(136, 534);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // btnE1
@@ -106,24 +108,6 @@
             this.btnE3.UseVisualStyleBackColor = false;
             this.btnE3.Click += new System.EventHandler(this.btnE3_Click);
             // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Consolas", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 26);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "EJERCICIOS";
-            // 
-            // panelVisor
-            // 
-            this.panelVisor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelVisor.Location = new System.Drawing.Point(136, 0);
-            this.panelVisor.Name = "panelVisor";
-            this.panelVisor.Size = new System.Drawing.Size(664, 450);
-            this.panelVisor.TabIndex = 1;
-            // 
             // btnEje4
             // 
             this.btnEje4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
@@ -152,12 +136,44 @@
             this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Consolas", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 26);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "EJERCICIOS";
+            // 
+            // panelVisor
+            // 
+            this.panelVisor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelVisor.Location = new System.Drawing.Point(136, 0);
+            this.panelVisor.Name = "panelVisor";
+            this.panelVisor.Size = new System.Drawing.Size(664, 560);
+            this.panelVisor.TabIndex = 1;
+            // 
+            // btnE6
+            // 
+            this.btnE6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.btnE6.FlatAppearance.BorderSize = 0;
+            this.btnE6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnE6.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnE6.Location = new System.Drawing.Point(3, 433);
+            this.btnE6.Name = "btnE6";
+            this.btnE6.Size = new System.Drawing.Size(130, 80);
+            this.btnE6.TabIndex = 5;
+            this.btnE6.Text = "Ejercicio6\r\nCalculadora ";
+            this.btnE6.UseVisualStyleBackColor = false;
+            this.btnE6.Click += new System.EventHandler(this.btnE6_Click);
+            // 
             // Menupricipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 560);
             this.Controls.Add(this.panelVisor);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,5 +199,6 @@
         private System.Windows.Forms.Button btnE3;
         private System.Windows.Forms.Button btnEje4;
         private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Button btnE6;
     }
 }

@@ -20,7 +20,7 @@ namespace CursoCharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmlista1 ());// formulario desde el que se desea iniciar 
+            Application.Run(new Menupricipal ());// formulario desde el que se desea iniciar 
         }
     }
 }

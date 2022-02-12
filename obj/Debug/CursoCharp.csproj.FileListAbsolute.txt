@@ -18,3 +18,4 @@ D:\udemy\C#\ProgramaCompleto\CursoCharp\obj\Debug\CursoCharp.Condicionales.frmco
 D:\udemy\C#\ProgramaCompleto\CursoCharp\obj\Debug\CursoCharp.Ejecicios.Ejercicio4.resources
 D:\udemy\C#\ProgramaCompleto\CursoCharp\obj\Debug\CursoCharp.Ejecicios.Ejercicio5.resources
 D:\udemy\C#\ProgramaCompleto\CursoCharp\obj\Debug\CursoCharp.Listas.frmlista1.resources
+D:\udemy\C#\ProgramaCompleto\CursoCharp\obj\Debug\CursoCharp.Ejecicios.Ejercicio6.resources
